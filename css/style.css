@@ -1,0 +1,278 @@
+@import url(normalize.css);
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    text-emphasis: none;
+    text-decoration: none;
+}
+
+body {
+    max-width: 1600px;
+    margin: auto;
+}
+
+header {
+    background-color: white;
+    color: black;
+    grid-area: p-header;
+    height: 65px;
+}
+#logo {
+    font-size: 150%;
+    padding-left: 50px;
+}
+header nav ul {
+    padding: 0;  
+}
+header nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 40px;
+}
+header nav ul li a{
+    color: black;
+}
+header nav ul li i{
+    padding-right: 5px;
+}
+
+.vertical-menu {
+    width: 40px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 20vh;
+}
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+
+#banner {
+    grid-area: p-banner;
+    background-image: url(../img/banner.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 500px;
+    padding: 150px;
+    color: white;}
+
+#title {
+    background-color:rgba(0,0,0,0.5);
+    padding: 30px;
+    width: 50%;
+}
+#title h1 {
+    font-size: 40px;
+}
+#cv {
+    display: inline-block;
+    background: rgb(26,24,62);
+    background: linear-gradient(90deg, rgba(26,24,62,1) 0%, rgba(64,184,185,1) 30%, rgba(0,212,255,1) 100%);
+    color: white;
+    padding: 5px;
+    font-size: larger;
+}
+#cv a {
+    color:white
+}
+
+main {
+    grid-area: p-proyects;
+    text-align: center;
+}
+main .flex-container {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+main .flex-container img {
+    height: 275px;
+}
+
+aside{
+    background-color: rgb(26, 26, 26);
+    height: 100%;
+}
+
+#home_contact {
+    grid-area: p-contact;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50%;
+}
+#proyecto {
+    font-size: x-large;
+}
+#contratame {
+    display: inline-block;
+    background: rgb(26,24,62);
+    background: linear-gradient(90deg, rgba(26,24,62,1) 0%, rgba(64,184,185,1) 30%, rgba(0,212,255,1) 100%);
+    color: white;
+    padding: 5px;
+    font-size: larger;
+}
+#contratame a{
+    color: white;
+}
+footer {
+    background-color: rgb(246, 245, 245);
+    text-align: center;
+    grid-area: p-footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "p-header p-header p-header"
+    "p-banner p-banner p-banner"
+    "p-proyects p-proyects p-contact"
+    "p-footer p-footer p-footer";
+}
+
+.flex-container {
+    display: flex;
+}
+header div{
+    padding-right: 100px;
+}
+
+#team {
+    background-image: url(../img/team2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+    align-items: center;
+}
+#team img {
+    border-radius: 50%;
+    width: 300px;
+}
+#title_team {
+    text-align: center;
+}
+
+#main_contact {   
+    background-image: url(../img/contact.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 780px;
+    color: white;
+}
+#main_contact h1{
+    padding-top: 40px;
+}
+#text_contact {
+    background-color:rgba(0,0,0,0.5);
+    height: 780px;
+}
+#contact {
+    display: flex;
+    justify-content: center;
+}
+#contact div {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#contact_links {
+    text-align: left;
+}
+#contact_links p a{
+    color: white;
+}
+#contact_links p i{
+    padding-right: 5px;
+}
+#web_contact {
+    padding-bottom: 50px;
+}
+
+table {
+    width: 600px;
+    margin: auto;
+}
+#table_header1 {
+    float: left;
+}
+#table_header2 {
+    text-align: right;
+}
+#table_title {
+    text-align: center;
+}
+#table_novedad {
+    background-color:rgba(0,0,0,0.5);
+    height: max-content;
+    width: max-content;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#table_novedad a{
+    color: white;
+}
+#table_novedad1 {
+    background-image: url(../img/proyect1.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    color: white;
+}
+#table_novedad2 {
+    background-image: url(../img/proyect4.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    color: white;
+}
+#table_novedad3 {
+    background-image: url(../img/proyect6.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    color: white;
+}
+#table_footer {
+    background-color: rgb(245, 245, 245);
+    color: black;
+    text-align: center;
+}
+#table_footer a i{
+    color: black;
+}
+
+@media all and (orientation: portrait) {
+    #home_contact {
+        grid-area: p-contact;
+        color: white;
+        width: 100vh;
+        margin: auto;
+        margin-top: auto;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "p-header p-header p-header"
+        "p-banner p-banner p-banner"
+        "p-proyects p-proyects p-proyects"
+        "p-contact p-contact p-contact"
+        "p-footer p-footer p-footer";
+    }
+}
